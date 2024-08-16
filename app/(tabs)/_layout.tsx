@@ -1,17 +1,15 @@
 import { Tabs } from 'expo-router';
 import React from 'react';
 
+import { Redirect } from 'expo-router';
 import { TabBarIcon } from '@/components/navigation/TabBarIcon';
-import { Colors } from '@/constants/Colors';
-import { useColorScheme } from '@/hooks/useColorScheme';
 
 export default function TabLayout() {
-  const colorScheme = useColorScheme();
-
-  return (
+  const isLoaded = false;
+console.log('isLoaded', isLoaded);
+  return isLoaded ? (
     <Tabs
       screenOptions={{
-        tabBarActiveTintColor: Colors[colorScheme ?? 'light'].tint,
         headerShown: false,
       }}>
       <Tabs.Screen
@@ -33,5 +31,7 @@ export default function TabLayout() {
         }}
       />
     </Tabs>
+  ) : (
+    <Redirect href="/onboarding" />
   );
 }

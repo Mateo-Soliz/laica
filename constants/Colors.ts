@@ -1,26 +1,59 @@
-/**
- * Below are the colors that are used in the app. The colors are defined in the light and dark mode.
- * There are many other ways to style your app. For example, [Nativewind](https://www.nativewind.dev/), [Tamagui](https://tamagui.dev/), [unistyles](https://reactnativeunistyles.vercel.app), etc.
- */
+export const neutral05="#EEEEEE"
+export const neutral1="#D4D6D6"
+export const neutral2="#B4BCBC"
+export const neutral3="#93A2A1"
+export const neutral4="#7A8E8E"
+export const neutral5="#627B7A"
+export const neutral6="#566C6B"
+export const neutral7="#485857"
+export const neutral8="#394545"
+export const neutral9="#293030"
 
-const tintColorLight = '#0a7ea4';
-const tintColorDark = '#fff';
+export const primary05="#E0F6F8"
+export const primary1="#B1E9EE"
+export const primary2="#80DCE4"
+export const primary3="#4DCEDA"
+export const primary4="#28C4D2"
+export const primary5="#00BBCC"
+export const primary6="#00ABB4"
+export const primary7="#06979C"
+export const primary8="#078284"
+export const primary9="#09605B"
 
-export const Colors = {
-  light: {
-    text: '#11181C',
-    background: '#fff',
-    tint: tintColorLight,
-    icon: '#687076',
-    tabIconDefault: '#687076',
-    tabIconSelected: tintColorLight,
-  },
-  dark: {
-    text: '#ECEDEE',
-    background: '#151718',
-    tint: tintColorDark,
-    icon: '#9BA1A6',
-    tabIconDefault: '#9BA1A6',
-    tabIconSelected: tintColorDark,
-  },
-};
+export const secundary05="#F3FBE8"
+export const secundary1="#E0F4C6"
+export const secundary2="#CBEDA1"
+export const secundary3="#B5E678"
+export const secundary4="#A2E056"
+export const secundary5="#92D938"
+export const secundary6="#82C830"
+export const secundary7="#6CB326"
+export const secundary8="#579F1D"
+export const secundary9="#2F7C0B"
+
+export const shades05="#FFFFFF"
+export const shades1="#000000"
+
+export const success05="#F2FCF5"
+export const success1="#CCF2D5"
+export const success2="#98E4AB"
+export const success3="#72DA8C"
+export const success4="#4BD06D"
+export const success5="#34C759"
+export const success6="#2EAE4E"
+export const success7="#2EAE4E"
+export const success8="#144B21"
+export const success9="#07190B"
+
+export const error05="#FFF3F2"
+export const error1="#FFCECB"
+export const error2="#FF9D98"
+export const error3="#FF7871"
+export const error4="#FF544A"
+export const error5="#FF3B30"
+export const error6="#FF170A"
+export const error7="#BD0A00"
+export const error8="#720600"
+export const error9="#260200"
+
+export const defaultBG="#18181A"
