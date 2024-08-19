@@ -1,33 +1,24 @@
-import { Tabs } from 'expo-router';
-import React from 'react';
+import { Tabs } from "expo-router";
+import React, { useEffect } from "react";
 
-import { Redirect } from 'expo-router';
-import { TabBarIcon } from '@/components/navigation/TabBarIcon';
-
+import { Redirect } from "expo-router";
+import * as SplashScreen from "expo-splash-screen";
 export default function TabLayout() {
-  const isLoaded = false;
-console.log('isLoaded', isLoaded);
+  const [isLoaded, setIsLoaded] = React.useState(false);
+
+  useEffect(() => {
+    SplashScreen.hideAsync();
+  }, []);
   return isLoaded ? (
     <Tabs
       screenOptions={{
         headerShown: false,
-      }}>
+      }}
+    >
       <Tabs.Screen
         name="index"
         options={{
-          title: 'Home',
-          tabBarIcon: ({ color, focused }) => (
-            <TabBarIcon name={focused ? 'home' : 'home-outline'} color={color} />
-          ),
-        }}
-      />
-      <Tabs.Screen
-        name="explore"
-        options={{
-          title: 'Explore',
-          tabBarIcon: ({ color, focused }) => (
-            <TabBarIcon name={focused ? 'code-slash' : 'code-slash-outline'} color={color} />
-          ),
+          title: "Home",
         }}
       />
     </Tabs>

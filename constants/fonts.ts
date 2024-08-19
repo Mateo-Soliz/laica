@@ -31,7 +31,7 @@ export const headline: Font = {
     lineHeight: normalize(22, "height"),
 };
 /* subhead */
-export const subhead: Font = {
+export const subHead: Font = {
     fontSize: normalize(15, "height"),
     lineHeight: normalize(20, "height"),
 };

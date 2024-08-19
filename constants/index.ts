@@ -1,4 +1,4 @@
 import * as Colors from "./colors";
-import * as fonts from "./fonts";
+import * as Fonts from "./fonts";
 
-export { Colors, fonts };
+export { Colors, Fonts };

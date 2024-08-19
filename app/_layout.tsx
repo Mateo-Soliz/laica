@@ -6,18 +6,20 @@ import "react-native-gesture-handler";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
 import "react-native-reanimated";
-
+import ThemeProvider from "@/providers/ThemeProvider";
 export default function RootLayout() {
   SplashScreen.preventAutoHideAsync();
 
   return (
     <SafeAreaProvider>
       <GestureHandlerRootView style={styles.container}>
-      <StatusBar style="dark" />
-        <Stack screenOptions={{ headerShown: false }}>
-          <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-          <Stack.Screen name="(auth)" />
-        </Stack>
+        <ThemeProvider>
+          <StatusBar style="dark" />
+          <Stack screenOptions={{ headerShown: false }}>
+            <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+            <Stack.Screen name="(auth)" />
+          </Stack>
+        </ThemeProvider>
       </GestureHandlerRootView>
     </SafeAreaProvider>
   );
